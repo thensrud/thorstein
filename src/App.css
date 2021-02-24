@@ -1,3 +1,9 @@
+:root {
+  --bg-color: black;
+  --font-title-color: rgb(242, 240, 245);
+  --font-text-color: rgb(211, 209, 218);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,50 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg-color);
+  color: var(--font-title-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  background-color: red;
+  width: 40rem;
+  height: 4rem;
+  margin: 1.2rem auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-div {
+  margin: 10rem auto;
+  display: flex;
+  width: 80%;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-div-block-left, .hero-div-block-right {
+  font-size: 2.5rem;
+  padding: 0 8rem;
+}
+
+.profile-picture {
+  width: 20rem;
+}
+
+.placeholder-square {
+  background-color: blue;
+  height: 15rem;
+  width: 15rem;
 }

@@ -1,9 +1,11 @@
 import './App.css';
+import { Home } from './home/home';
 
 function App() {
   return (
     <>
-      <header className="App-header">Test</header>
+      <header>Test</header>
+      <Home />
     </>
   );
 }
