@@ -55,7 +55,7 @@ code {
 
 .text-box {
   border-radius: 7px;
-  border: 1px solid var(--font-text-color);
+  border: 2px solid var(--font-text-color);
   padding: 3rem 5rem;
   background-color: rgb(20, 20, 23);
   width: auto;
@@ -89,6 +89,14 @@ code {
   border: none;
   border-radius: 0;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: inherit;
 }
 
 .icon {
@@ -155,7 +163,7 @@ h1, h2 {
 .block1 {
   opacity: 50%;
   position: absolute;
-  top: 47vh;
+  top: 35vh;
   width: 100vw;
   height: 60vh;
   clip-path: polygon(56% 2%, 98% 26%, 95% 49%, 76% 81%, 27% 95%, 2% 68%, 23% 23%);
@@ -214,7 +222,7 @@ to {border-right-color: transparent;}
 
 /* responsive */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .box-container {
     grid-template-columns: 1fr;
     gap: 4rem 2rem;

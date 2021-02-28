@@ -8,6 +8,63 @@ import readIcon from './images/icons/read.png';
 
 export const Home = () => {
 
+  let TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap sub-title">'+this.txt+'</span>';
+
+    let that = this;
+    let delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === 'I like ') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    let elements = document.getElementsByClassName('typewrite');
+    for (let i=0; i<elements.length; i++) {
+        let toRotate = elements[i].getAttribute('data-type');
+        let period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    let css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  };
+
   return (
     <>
       
@@ -17,12 +74,17 @@ export const Home = () => {
 
           <div className="text-box welcome-box">
             <h1 className="title">Hi, I'm Thorstein :)</h1>
-            <h2 className="sub-title">I like making things.</h2>
+            <h2 className="sub-title">
+              <a href="" class="typewrite" data-period="2000" data-type='[ "I like making things.", "I like colors, apparently.", "I like cats. And dogs. Never understood horses.", "I like you." ]'>
+                <span class="wrap"></span>
+              </a>
+            </h2>
+            
             <img src={manIcon} className="icon"></img>
             <p className="text-box-paragraph">
               I made this site for fun, and as a place to collect and showcase some of my practice projects.
               <br/><br/>
-              Above, you can see my home town, Rjukan, viewed more or less from the perspective of the house in which I grew up.
+              Above, you can see my home town, Rjukan, viewed more or less from the perspective of the house in which I grew up, made with CSS and unhealthy amounts of time.
               You can read more about what I do and what I've done by clicking on this "about me"-button:
               <br/><br/>
               Coming soon.
