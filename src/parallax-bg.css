@@ -1,0 +1,312 @@
+/*
+body {
+    font: 100% / 1.5 Arial;
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+*/
+
+/* sky color */
+
+.scroll-down-left {
+    position: absolute;
+    left: 30px;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #baabeb;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.scroll-down-right {
+    position: absolute;
+    right: 30px;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #baabeb;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-2rem); }
+    100% { transform: translateY(0); }
+}
+@-webkit-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-2rem); }
+    100% { transform: translateY(0); }
+}
+@-moz-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-2rem); }
+    100% { transform: translateY(0); }
+}
+
+#parallax-container {
+    
+}
+
+.background-container {
+    background-image: linear-gradient(rgb(13, 65, 143), rgb(235, 156, 71), rgb(186, 0, 0));
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.parallax {
+    height: 500px; /* fallback */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin-x: 100%;
+    /* perspective-origin-x: 100%; */
+}
+
+.parallax__group {
+    position: relative;
+    height: 500px; /* fallback */
+    height: 100vh;
+    width: 100vw;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: -5;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform-origin-x: 100%;
+    /* transform-origin-x: 100%; */
+}
+
+.parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 1;
+    background-image: linear-gradient(#213a06 40%, #1a1300);
+    height: 100vh;
+    clip-path: polygon(0 71%, 8% 80%, 12% 85%, 14% 75%, 15% 85%, 21% 90%, 23% 81%, 25% 91%, 32% 88%, 40% 93%, 48% 92%, 49% 83%, 51% 93%, 66% 92%, 81% 83%, 82% 77%, 83% 82%, 90% 79%, 100% 66%, 100% 100%, 0 100%);
+}
+
+.light-rays {
+    background: rgba(191, 0, 255, 0.577) url('./home/images/light-rays.png');
+    background-repeat: no-repeat;
+    background-size: 3000px 3000px;
+    background-position: -50rem 0rem;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    left: 105rem;
+    top: 20rem;
+    bottom: 0;
+}
+
+.parallax__layer--back {
+    -webkit-transform: translateZ(-150px) scale(1.5);
+    transform: translateZ(-150px) scale(1.5);
+    z-index: -2;
+    background: radial-gradient(rgb(255, 255, 255), rgb(48, 38, 5), rgb(39, 58, 12));
+    clip-path: polygon(0 33%, 8% 53%, 13% 61%, 14% 60%, 14% 63%, 17% 66%, 18% 65%, 18% 68%, 26% 77%, 27% 75%, 28% 79%, 41% 86%, 63% 85%, 70% 80%, 76% 74%, 77% 71%, 78% 73%, 88% 61%, 100% 40%, 100% 100%, 0 100%);
+}
+
+.parallax__layer--town {
+    top: 46rem;
+    left: 4rem;
+    height: 40vh;
+    width: 60vw;
+    -webkit-transform: translateZ(-400px) scale(2.5);
+    transform: translateZ(-400px) scale(2.5);
+    z-index: -3;
+    background-image: linear-gradient(rgb(156, 119, 39) 45%, rgb(0, 0, 0));
+    clip-path: polygon(36% 73%, 38% 73%, 38% 77%, 40% 77%, 40% 71%, 42% 70%, 42% 77%, 44% 77%, 44% 73%, 46% 73%, 46% 78%, 47% 78%, 47% 70%, 46% 70%, 49% 65%, 52% 70%, 51% 70%, 51% 79%, 53% 78%, 53% 72%, 57% 72%, 57% 78%, 59% 78%, 59% 73%, 62% 71%, 62% 78%, 63% 77%, 63% 67%, 66% 67%, 66% 78%, 68% 78%, 68% 71%, 70% 74%, 70% 86%, 36% 85%);
+}
+
+.parallax__layer--town2 {
+    top: 54rem;
+    left: -18rem;
+    height: 36vh;
+    width: 58vw;
+    -webkit-transform: translateZ(-500px) scale(2.7);
+    transform: translateZ(-500px) scale(2.7);
+    z-index: -4;
+    background-image: linear-gradient(rgb(194, 148, 49) 55%, rgb(24, 24, 24));
+    clip-path: polygon(36% 73%, 38% 73%, 38% 77%, 40% 77%, 40% 71%, 42% 70%, 42% 77%, 44% 77%, 44% 73%, 46% 73%, 46% 78%, 47% 78%, 47% 70%, 46% 70%, 49% 65%, 52% 70%, 51% 70%, 51% 79%, 53% 78%, 53% 72%, 57% 72%, 57% 78%, 59% 78%, 59% 73%, 62% 71%, 62% 78%, 63% 77%, 63% 67%, 66% 67%, 66% 78%, 68% 78%, 68% 71%, 70% 74%, 70% 86%, 36% 85%);
+}
+
+.parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: -3;
+    background-image: linear-gradient(178deg, rgb(227, 227, 227) 20%, rgb(44, 54, 13), rgb(171, 134, 0));
+    clip-path: polygon(0 55%, 18% 45%, 32% 31%, 47% 29%, 70% 33%, 83% 46%, 100% 55%, 100% 100%, 0 100%);
+    -webkit-filter:blur(1px);
+    filter:blur(1px);
+}
+
+.ridge1 {
+    width: 80rem;
+    height: 30rem;
+    opacity: 50%;
+
+    text-align: center;
+    position: absolute;
+    left: 38vw;
+    top: 55vh;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(20deg);
+
+    z-index: -1;
+    background-color: rgb(69, 69, 69);
+    clip-path: polygon(44% 13%, 44% 23%, 44% 30%, 45% 45%, 44% 40%, 41% 53%, 44% 36%, 43% 27%);
+}
+
+.ridge2 {
+    width: 80rem;
+    height: 28rem;
+    opacity: 50%;
+
+    text-align: center;
+    position: absolute;
+    left: 42vw;
+    top: 50vh;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scaleX(-1) skewX(-10deg);
+
+    z-index: -1;
+    background-color: rgb(69, 69, 69);
+    clip-path: polygon(44% 18%, 44% 23%, 44% 30%, 45% 45%, 44% 40%, 41% 53%, 44% 36%, 43% 27%);
+}
+
+.ridge3 {
+    width: 88rem;
+    height: 28rem;
+    opacity: 50%;
+
+    text-align: center;
+    position: absolute;
+    left: 58vw;
+    top: 53vh;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scaleX(-1) skewX(-25deg);
+
+    z-index: -1;
+    background-color: rgb(69, 69, 69);
+    clip-path: polygon(44% 13%, 44% 23%, 44% 30%, 45% 45%, 44% 40%, 41% 53%, 44% 36%, 43% 27%);
+}
+
+.parallax__layer--sky {
+    -webkit-transform: translateZ(-900px) scale(4);
+    transform: translateZ(-900px) scale(4);
+    z-index: -4;
+    height: 100vh;
+    width: 100vw;
+}
+
+.parallax {
+    font-size: 200%;
+}
+
+/* centre content */
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+  
+@-moz-keyframes move-background {    
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+    @-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+ 
+.stars {
+    opacity: 70%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+    display: block;
+    z-index: -4;
+}
+
+.sun {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(#ffc64b 40%, #ffc533);
+    box-shadow: 0 0 100px rgb(255, 233, 161);
+    position: absolute;
+    top: 40vh;
+    bottom: 0;
+    left: 88vw;
+    right: 0;   
+    display: block;
+    z-index: -3;
+}
+
+.clouds {
+    opacity: 30%;
+    width: 400%;
+    height: 100vh;
+    background: orange url('./home/images/clouds.png') repeat-x;
+    background-size: 900px 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -3;
+  
+    -moz-animation:move-background 150s linear infinite;
+    -ms-animation:move-background 150s linear infinite;
+    -o-animation:move-background 150s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 150s linear infinite;
+}
