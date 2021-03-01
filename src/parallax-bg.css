@@ -43,13 +43,6 @@
     background-image: linear-gradient(rgb(13, 65, 143), rgb(235, 156, 71), rgb(186, 0, 0));
 }
 
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 .parallax__layer {
     position: absolute;
     top: 0;
@@ -216,10 +209,11 @@
  
 .stars {
     opacity: 0.7;
-    background: repeat;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;   
     display: block;
