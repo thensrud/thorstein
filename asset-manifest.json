@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/thorstein/static/css/main.22a2c64d.chunk.css",
-    "main.js": "/thorstein/static/js/main.c38b01a8.chunk.js",
-    "main.js.map": "/thorstein/static/js/main.c38b01a8.chunk.js.map",
+    "main.css": "/thorstein/static/css/main.e54c093a.chunk.css",
+    "main.js": "/thorstein/static/js/main.a61ae3ab.chunk.js",
+    "main.js.map": "/thorstein/static/js/main.a61ae3ab.chunk.js.map",
     "runtime-main.js": "/thorstein/static/js/runtime-main.7a419772.js",
     "runtime-main.js.map": "/thorstein/static/js/runtime-main.7a419772.js.map",
     "static/js/2.9af4145a.chunk.js": "/thorstein/static/js/2.9af4145a.chunk.js",
     "static/js/2.9af4145a.chunk.js.map": "/thorstein/static/js/2.9af4145a.chunk.js.map",
     "index.html": "/thorstein/index.html",
-    "static/css/main.22a2c64d.chunk.css.map": "/thorstein/static/css/main.22a2c64d.chunk.css.map",
+    "static/css/main.e54c093a.chunk.css.map": "/thorstein/static/css/main.e54c093a.chunk.css.map",
     "static/js/2.9af4145a.chunk.js.LICENSE.txt": "/thorstein/static/js/2.9af4145a.chunk.js.LICENSE.txt",
-    "static/media/parallax-bg.css": "/thorstein/static/media/light-rays.2da8c869.png",
+    "static/media/clouds.ce573c02.png": "/thorstein/static/media/clouds.ce573c02.png",
     "static/media/game-console.bccbe1d7.png": "/thorstein/static/media/game-console.bccbe1d7.png",
+    "static/media/light-rays.2da8c869.png": "/thorstein/static/media/light-rays.2da8c869.png",
     "static/media/man.584242fb.png": "/thorstein/static/media/man.584242fb.png",
     "static/media/musical-notes.c8606ccb.png": "/thorstein/static/media/musical-notes.c8606ccb.png",
     "static/media/read.7a6a81c4.png": "/thorstein/static/media/read.7a6a81c4.png",
@@ -20,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.7a419772.js",
     "static/js/2.9af4145a.chunk.js",
-    "static/css/main.22a2c64d.chunk.css",
-    "static/js/main.c38b01a8.chunk.js"
+    "static/css/main.e54c093a.chunk.css",
+    "static/js/main.a61ae3ab.chunk.js"
   ]
 }
