@@ -75,17 +75,17 @@ export const Home = () => {
           <div className="text-box welcome-box">
             <h1 className="title">Hi, I'm Thorstein :)</h1>
             <h2 className="sub-title">
-              <a href="" class="typewrite" data-period="2000" data-type='[ "I like making things.", "I like colors, apparently.", "I like cats. And dogs. Never understood horses.", "I like you." ]'>
+              <a href="" class="typewrite" tabIndex="-1" data-period="2000" data-type='[ "I like making things.", "I like cats. And dogs. Never understood horses.", "I like you." ]'>
                 <span class="wrap"></span>
               </a>
             </h2>
             
             <img src={manIcon} className="icon"></img>
             <p className="text-box-paragraph">
-              I made this site for fun, and as a place to collect and showcase some of my practice projects.
+              I made this site for fun, and as a place to collect and showcase some of my practice projects. Test.
               <br/><br/>
               Above, you can see my home town, Rjukan, viewed more or less from the perspective of the house in which I grew up, made with CSS and unhealthy amounts of time.
-              You can read more about what I do and what I've done by clicking on this "about me"-button:
+              You can read more about what I do and what I've done by clicking on the button below.
               <br/><br/>
               Coming soon.
             </p>
