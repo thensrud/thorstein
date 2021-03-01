@@ -161,7 +161,7 @@ h1, h2 {
 /* colored blocks */
 
 .block1 {
-  opacity: 50%;
+  opacity: 0.5;
   position: absolute;
   top: 35vh;
   width: 100vw;
@@ -172,7 +172,7 @@ h1, h2 {
 }
 
 .block2 {
-  opacity: 50%;
+  opacity: 0.5;
   position: absolute;
   top: 95vh;
   width: 100vw;

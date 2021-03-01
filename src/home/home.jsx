@@ -82,7 +82,7 @@ export const Home = () => {
             
             <img src={manIcon} className="icon"></img>
             <p className="text-box-paragraph">
-              I made this site for fun, and as a place to collect and showcase some of my practice projects. Test.
+              I made this site for fun, and as a place to collect and showcase some of my practice projects. Testing.
               <br/><br/>
               Above, you can see my home town, Rjukan, viewed more or less from the perspective of the house in which I grew up, made with CSS and unhealthy amounts of time.
               You can read more about what I do and what I've done by clicking on the button below.
