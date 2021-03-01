@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/thorstein/static/css/main.0e0f3a60.chunk.css",
-    "main.js": "/thorstein/static/js/main.58a986f4.chunk.js",
-    "main.js.map": "/thorstein/static/js/main.58a986f4.chunk.js.map",
+    "main.css": "/thorstein/static/css/main.22a2c64d.chunk.css",
+    "main.js": "/thorstein/static/js/main.c38b01a8.chunk.js",
+    "main.js.map": "/thorstein/static/js/main.c38b01a8.chunk.js.map",
     "runtime-main.js": "/thorstein/static/js/runtime-main.7a419772.js",
     "runtime-main.js.map": "/thorstein/static/js/runtime-main.7a419772.js.map",
     "static/js/2.9af4145a.chunk.js": "/thorstein/static/js/2.9af4145a.chunk.js",
     "static/js/2.9af4145a.chunk.js.map": "/thorstein/static/js/2.9af4145a.chunk.js.map",
     "index.html": "/thorstein/index.html",
-    "static/css/main.0e0f3a60.chunk.css.map": "/thorstein/static/css/main.0e0f3a60.chunk.css.map",
+    "static/css/main.22a2c64d.chunk.css.map": "/thorstein/static/css/main.22a2c64d.chunk.css.map",
     "static/js/2.9af4145a.chunk.js.LICENSE.txt": "/thorstein/static/js/2.9af4145a.chunk.js.LICENSE.txt",
     "static/media/parallax-bg.css": "/thorstein/static/media/light-rays.2da8c869.png",
     "static/media/game-console.bccbe1d7.png": "/thorstein/static/media/game-console.bccbe1d7.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.7a419772.js",
     "static/js/2.9af4145a.chunk.js",
-    "static/css/main.0e0f3a60.chunk.css",
-    "static/js/main.58a986f4.chunk.js"
+    "static/css/main.22a2c64d.chunk.css",
+    "static/js/main.c38b01a8.chunk.js"
   ]
 }
