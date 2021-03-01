@@ -1,6 +1,9 @@
 import './parallax-bg.css';
 import './App.css';
 
+import lightrays from './home/images/light-rays.png';
+import clouds from './home/images/clouds.png';
+
 export const ParallaxBG = ({children}) => {
   return (
     <div id="parallax-container"> 
@@ -23,7 +26,7 @@ export const ParallaxBG = ({children}) => {
           <div className="parallax__layer parallax__layer--town2">
           </div>
 
-          <div className="light-rays"></div>
+          <img className="light-rays" src={lightrays}></img>
           
           <div className="parallax__layer parallax__layer--deep">
             <div className="ridge1"></div>
@@ -32,9 +35,9 @@ export const ParallaxBG = ({children}) => {
           </div>
 
           <div className="background-container parallax__layer parallax__layer--sky">
-            <div className="stars"></div>
+            <img className="stars" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png"></img>
             <div className="sun"></div>
-            <div className="clouds"></div>
+            <img className="clouds" style={{ backgroundImage: `url(${clouds})` }}></img>
           </div>
 
         </div>

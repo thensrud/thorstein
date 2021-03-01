@@ -98,15 +98,15 @@
 }
 
 .light-rays {
-    background: rgba(191, 0, 255, 0.577) url('./home/images/light-rays.png');
+    background: rgba(191, 0, 255, 0.577);
     background-repeat: no-repeat;
-    background-size: 3000px 3000px;
+    /*
+    background-size: 1000px 3000px;
     background-position: -50rem 0rem;
+    */
     opacity: 30%;
-    width: 100%;
-    height: 100%;
-    left: 105rem;
-    top: 20rem;
+    width: 140vw;
+    height: 160vh;
     z-index: 0;
 }
 
@@ -213,6 +213,51 @@
 }
 
 /* centre content */
+ 
+.stars {
+    opacity: 70%;
+    background: repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+    display: block;
+    z-index: -4;
+}
+
+.sun {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(#ffc64b 40%, #ffc533);
+    box-shadow: 0 0 100px rgb(255, 233, 161);
+    position: absolute;
+    top: 40vh;
+    bottom: 0;
+    left: 88vw;
+    right: 0;   
+    display: block;
+    z-index: -3;
+}
+
+.clouds {
+    position: absolute;
+    left: -1000px;
+    opacity: 30%;
+    width: 3000px;
+    height: 80vh;
+    background-repeat: repeat-x;
+    background-size: 1000px 600px;
+    z-index: -3;
+  
+    -moz-animation:move-background 150s linear infinite;
+    -ms-animation:move-background 150s linear infinite;
+    -o-animation:move-background 150s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 150s linear infinite;
+}
+
 
 @keyframes move-background {
     from {
@@ -248,50 +293,4 @@
     to { 
         -webkit-transform: translate3d(1000px, 0px, 0px);
     }
-}
- 
-.stars {
-    opacity: 70%;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;   
-    display: block;
-    z-index: -4;
-}
-
-.sun {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    background: radial-gradient(#ffc64b 40%, #ffc533);
-    box-shadow: 0 0 100px rgb(255, 233, 161);
-    position: absolute;
-    top: 40vh;
-    bottom: 0;
-    left: 88vw;
-    right: 0;   
-    display: block;
-    z-index: -3;
-}
-
-.clouds {
-    opacity: 30%;
-    width: 400%;
-    height: 100vh;
-    background: orange url('./home/images/clouds.png') repeat-x;
-    background-size: 900px 600px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -3;
-  
-    -moz-animation:move-background 150s linear infinite;
-    -ms-animation:move-background 150s linear infinite;
-    -o-animation:move-background 150s linear infinite;
-    -webkit-animation:move-background 150s linear infinite;
-    animation:move-background 150s linear infinite;
 }
