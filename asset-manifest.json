@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/thorstein/static/css/main.3443c821.chunk.css",
-    "main.js": "/thorstein/static/js/main.03997d08.chunk.js",
-    "main.js.map": "/thorstein/static/js/main.03997d08.chunk.js.map",
+    "main.css": "/thorstein/static/css/main.0dee5a11.chunk.css",
+    "main.js": "/thorstein/static/js/main.80f83094.chunk.js",
+    "main.js.map": "/thorstein/static/js/main.80f83094.chunk.js.map",
     "runtime-main.js": "/thorstein/static/js/runtime-main.7a419772.js",
     "runtime-main.js.map": "/thorstein/static/js/runtime-main.7a419772.js.map",
     "static/js/2.9af4145a.chunk.js": "/thorstein/static/js/2.9af4145a.chunk.js",
     "static/js/2.9af4145a.chunk.js.map": "/thorstein/static/js/2.9af4145a.chunk.js.map",
     "index.html": "/thorstein/index.html",
-    "static/css/main.3443c821.chunk.css.map": "/thorstein/static/css/main.3443c821.chunk.css.map",
+    "static/css/main.0dee5a11.chunk.css.map": "/thorstein/static/css/main.0dee5a11.chunk.css.map",
     "static/js/2.9af4145a.chunk.js.LICENSE.txt": "/thorstein/static/js/2.9af4145a.chunk.js.LICENSE.txt",
     "static/media/clouds.ce573c02.png": "/thorstein/static/media/clouds.ce573c02.png",
     "static/media/game-console.bccbe1d7.png": "/thorstein/static/media/game-console.bccbe1d7.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.7a419772.js",
     "static/js/2.9af4145a.chunk.js",
-    "static/css/main.3443c821.chunk.css",
-    "static/js/main.03997d08.chunk.js"
+    "static/css/main.0dee5a11.chunk.css",
+    "static/js/main.80f83094.chunk.js"
   ]
 }
