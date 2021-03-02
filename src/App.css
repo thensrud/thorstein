@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 100vh;
   height: 100rem;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(#1a1300 2%, #24112b, #161b22);
   z-index: 0;
 }
@@ -234,5 +234,26 @@ to {border-right-color: transparent;}
   }
   .text-box {
     padding: 2rem 2rem;
+  }
+  .icon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 50%;
+    top: 1rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+    width: 4rem;
+  }
+  .button-holder {
+    padding: 0;
+    margin: 1rem 0;
+    width: 15rem;
+    height: 4rem;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
